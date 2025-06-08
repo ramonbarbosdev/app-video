@@ -1,10 +1,18 @@
 <div class="flex p-8 w-screen justify-center">
 
     <div class="flex w-full h-full flex-wrap gap-4  ">
-         
+       <h1 class="text-2xl text-red-500">Renderizando!</h1>
         <app-cardroom
-        [nameRoom]="'Nome da sala'"
+            *ngFor="let room of rooms"
+            [nm_room]="room.nm_room"           
+            [ds_room]="room.ds_room" 
         ></app-cardroom>
+
+        <app-cardroom
+  nm_room="Sala Exemplo"
+  ds_room="Essa é uma descrição de exemplo."
+  imageUrl=""
+></app-cardroom>
        
    
     </div>

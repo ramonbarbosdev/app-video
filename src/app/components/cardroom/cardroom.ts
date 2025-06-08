@@ -11,6 +11,7 @@ import {
 
 @Component({
   selector: 'app-cardroom',
+  standalone: true, 
     imports: [ HlmCardContentDirective,
               HlmCardDescriptionDirective,
               HlmCardDirective,
@@ -22,6 +23,9 @@ import {
 })
 export class Cardroom {
 
-  @Input() nameRoom!: string;
+  @Input() id_room!: number;
+  @Input() nm_room!: string;
+  @Input() ds_room!: string;
+  @Input() imageUrl!: string;
 
 }
