@@ -5,6 +5,12 @@
 @import '@spartan-ng/brain/hlm-tailwind-preset.css';
 
 
+html, body {
+  overflow: hidden; 
+  margin: 0;
+  padding: 0;
+}
+
 :root {
 // --font-sans: ''
 }
