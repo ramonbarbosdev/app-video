@@ -1,19 +1,22 @@
-<div class="flex p-8 w-screen justify-center">
+<div class="flex p-8 w-screen justify-center ">
 
-    <div class="flex w-full h-full flex-wrap gap-4  ">
-       <h1 class="text-2xl text-red-500">Renderizando!</h1>
-        <app-cardroom
-            *ngFor="let room of rooms"
-            [nm_room]="room.nm_room"           
-            [ds_room]="room.ds_room" 
-        ></app-cardroom>
+   <div class="flex flex-col ">
 
-        <app-cardroom
-  nm_room="Sala Exemplo"
-  ds_room="Essa é uma descrição de exemplo."
-  imageUrl=""
-></app-cardroom>
-       
-   
+    <div class="flex w-full  p-2">
+      <button hlmBtn>Cria sala</button>
     </div>
+    <div class="flex w-full h-full flex-wrap gap-4   ">
+        <app-cardroom
+          *ngFor="let room of rooms"
+          [id_room]="room.id_room"
+          [nm_room]="room.nm_room"
+          [ds_room]="room.ds_room"
+          [imageUrl]="room.imageUrl"
+        >
+        </app-cardroom>
+
+    </div>
+   </div>
+
+   
 </div>
