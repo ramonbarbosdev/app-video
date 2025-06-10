@@ -21,6 +21,15 @@
       ],
       "@spartan-ng/helm/card": [
         ".\\libs/ui/ui-card-helm/src/index.ts"
+      ],
+      "@spartan-ng/helm/sheet": [
+        ".\\libs/ui/ui-sheet-helm/src/index.ts"
+      ],
+      "@spartan-ng/helm/select": [
+        ".\\libs/ui/ui-select-helm/src/index.ts"
+      ],
+      "@spartan-ng/helm/input": [
+        ".\\libs/ui/ui-input-helm/src/index.ts"
       ]
     }
   },

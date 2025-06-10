@@ -1,0 +1,17 @@
+
+  <label hlmLabel for="nm_room" class="text-right">{{label}}</label>
+  <input
+    hlmInput
+    title="texto"
+    class="col-span-3"
+    type= "text"
+    [id]="inputId"
+    [name]="inputId"
+    [value]="model ?? null"
+    (input)="onInputChange($event)"
+    [placeholder]="placeholder"
+    [required]="required"
+  />
+
+
+

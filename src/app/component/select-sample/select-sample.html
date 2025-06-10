@@ -1,0 +1,20 @@
+
+<label hlmLabel  class="text-right">{{label}}</label>
+<brn-select
+  title="select"
+  [id]="inputId"
+  [name]="inputId"
+  [ngModel]="model"
+  (ngModelChange)="modelChange.emit($event)"
+  [required]="required"
+  >
+  <hlm-select-trigger>
+    <hlm-select-value />
+  </hlm-select-trigger>
+
+<hlm-select-content class="w-56">
+  <hlm-option  *ngFor="let item of options" [value]="item[valueField]" >{{ item[labelField] }}</hlm-option>
+</hlm-select-content>
+
+</brn-select>
+

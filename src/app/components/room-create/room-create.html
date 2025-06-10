@@ -1,0 +1,61 @@
+<hlm-sheet side="right">
+  <button id="edit-profile" variant="outline" brnSheetTrigger hlmBtn>
+    Edit Profile
+  </button>
+  <hlm-sheet-content *brnSheetContent="let ctx">
+    <hlm-sheet-header>
+      <h3 hlmSheetTitle>Nova Sala</h3>
+      <p hlmSheetDescription>Crie sua nova sala rapido e facil aqui.</p>
+    </hlm-sheet-header>
+
+    <form action="">
+      <div class="py-4 grid gap-4">
+
+        <div class="items-center grid grid-cols-4 gap-4">
+          <app-input-text
+            [label]="'Nome:'"
+            [inputId]="'nm_room'"
+            [(model)]="objeto.nm_room"
+            [required]="true"
+            >
+          </app-input-text>
+        </div>
+
+        <div class="items-center grid grid-cols-4 gap-4">
+          <app-input-text
+            [label]="'Descrição:'"
+            [inputId]="'ds_room'"
+            [(model)]="objeto.ds_room"
+            [required]="true"
+            >
+          </app-input-text>
+        </div>
+
+        <div class="items-center grid grid-cols-4 gap-4">
+         <app-select-sample
+         [label]="'Capacidade:'"
+         [inputId]="'nu_capacidade'"
+         [required]="true"
+          [(model)]="objeto.nu_capacidade"
+         [options]="options"
+         [valueField]="'value'"
+         [labelField]="'label'"
+
+         >
+
+         </app-select-sample>
+        </div>
+      </div>
+
+
+    </form>
+
+    <hlm-sheet-footer>
+      <app-button
+      (clickEvent)="onSave()"
+      [text]="'Confirmar'">
+    </app-button>
+    </hlm-sheet-footer>
+
+  </hlm-sheet-content>
+</hlm-sheet>

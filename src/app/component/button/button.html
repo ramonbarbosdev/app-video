@@ -1,0 +1,10 @@
+<button
+  hlmBtn
+  type="button"
+  title="botao"
+  (click)="onClick()"
+  [disabled]="disabled"
+>
+  <i *ngIf="icon" class="bi" [ngClass]="icon"></i> <!-- Exibe o ícone -->
+  {{ text }}
+</button>

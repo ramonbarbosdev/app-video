@@ -3,8 +3,12 @@
    <div class="flex flex-col ">
 
     <div class="flex w-full  p-2">
-      <button hlmBtn>Cria sala</button>
+       <app-room-create></app-room-create>
+       
     </div>
+
+
+
     <div class="flex w-full h-full flex-wrap gap-4   ">
         <app-cardroom
           *ngFor="let room of rooms"
@@ -18,5 +22,5 @@
     </div>
    </div>
 
-   
+
 </div>

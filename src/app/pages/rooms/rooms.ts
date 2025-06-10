@@ -4,18 +4,22 @@ import { Cardroom } from "../../components/cardroom/cardroom";
 import { Room } from '../../models/room';
 import { ROOMS_MOCK_DATA } from '../../mock/rooms-mock-data';
 import { CommonModule } from '@angular/common';
-import { HlmButtonDirective,  } from '@spartan-ng/helm/button';
 
+import { RoomCreate } from "../../components/room-create/room-create";
 
 @Component({
   selector: 'app-rooms',
   standalone: true,
-  imports: [Cardroom, CommonModule, HlmButtonDirective] ,
+  imports: [
+    Cardroom,
+    CommonModule,
+
+    RoomCreate
+],
   templateUrl: './rooms.html',
   styleUrl: './rooms.scss',
 })
 export class Rooms implements OnInit {
-  // <-- Implemente OnInit
 
   rooms: Room[] = [];
 
@@ -24,7 +28,6 @@ export class Rooms implements OnInit {
   }
 
   ngOnInit(): void {
-    // <-- Implemente ngOnInit para carregar os dados
     this.rooms = ROOMS_MOCK_DATA;
     console.log('Dados mockados carregados:', this.rooms);
   }
