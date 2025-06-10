@@ -7,6 +7,18 @@
     ],
     "@spartan-ng/helm/icon": [
       ".\\libs/ui/ui-icon-helm/src/index.ts"
+    ],
+    "@spartan-ng/helm/card": [
+      ".\\libs/ui/ui-card-helm/src/index.ts"
+    ],
+    "@spartan-ng/helm/sheet": [
+      ".\\libs/ui/ui-sheet-helm/src/index.ts"
+    ],
+    "@spartan-ng/helm/select": [
+      ".\\libs/ui/ui-select-helm/src/index.ts"
+    ],
+    "@spartan-ng/helm/input": [
+      ".\\libs/ui/ui-input-helm/src/index.ts"
     ]
   },
   "nxJsonPlugins": [],
@@ -62,6 +74,34 @@
         "hash": "7896754714560199098"
       },
       {
+        "file": "libs/ui/ui-card-helm/src/index.ts",
+        "hash": "16562238750490677596"
+      },
+      {
+        "file": "libs/ui/ui-card-helm/src/lib/hlm-card-content.directive.ts",
+        "hash": "14120040773416496629"
+      },
+      {
+        "file": "libs/ui/ui-card-helm/src/lib/hlm-card-description.directive.ts",
+        "hash": "11379924620899130749"
+      },
+      {
+        "file": "libs/ui/ui-card-helm/src/lib/hlm-card-footer.directive.ts",
+        "hash": "10967238700823552868"
+      },
+      {
+        "file": "libs/ui/ui-card-helm/src/lib/hlm-card-header.directive.ts",
+        "hash": "15901871804019604030"
+      },
+      {
+        "file": "libs/ui/ui-card-helm/src/lib/hlm-card-title.directive.ts",
+        "hash": "12874525138222134681"
+      },
+      {
+        "file": "libs/ui/ui-card-helm/src/lib/hlm-card.directive.ts",
+        "hash": "17507123041101396637"
+      },
+      {
         "file": "libs/ui/ui-icon-helm/src/index.ts",
         "hash": "13072002477516072914"
       },
@@ -74,8 +114,96 @@
         "hash": "1780499468245078594"
       },
       {
+        "file": "libs/ui/ui-input-helm/src/index.ts",
+        "hash": "17755648424496072041"
+      },
+      {
+        "file": "libs/ui/ui-input-helm/src/lib/hlm-input-error.directive.ts",
+        "hash": "16276122020969752876"
+      },
+      {
+        "file": "libs/ui/ui-input-helm/src/lib/hlm-input.directive.ts",
+        "hash": "4534128541006370291"
+      },
+      {
+        "file": "libs/ui/ui-select-helm/src/index.ts",
+        "hash": "729703744460096554"
+      },
+      {
+        "file": "libs/ui/ui-select-helm/src/lib/hlm-select-content.directive.ts",
+        "hash": "1223873693390486375"
+      },
+      {
+        "file": "libs/ui/ui-select-helm/src/lib/hlm-select-group.directive.ts",
+        "hash": "898238239971699547"
+      },
+      {
+        "file": "libs/ui/ui-select-helm/src/lib/hlm-select-label.directive.ts",
+        "hash": "18197136989628363073"
+      },
+      {
+        "file": "libs/ui/ui-select-helm/src/lib/hlm-select-option.component.ts",
+        "hash": "8069632797134223489"
+      },
+      {
+        "file": "libs/ui/ui-select-helm/src/lib/hlm-select-scroll-down.component.ts",
+        "hash": "6602468922003691662"
+      },
+      {
+        "file": "libs/ui/ui-select-helm/src/lib/hlm-select-scroll-up.component.ts",
+        "hash": "271482059576409418"
+      },
+      {
+        "file": "libs/ui/ui-select-helm/src/lib/hlm-select-trigger.component.ts",
+        "hash": "16526844998319560592"
+      },
+      {
+        "file": "libs/ui/ui-select-helm/src/lib/hlm-select-value.directive.ts",
+        "hash": "14886884917670135636"
+      },
+      {
+        "file": "libs/ui/ui-select-helm/src/lib/hlm-select.directive.ts",
+        "hash": "17579825974472424499"
+      },
+      {
+        "file": "libs/ui/ui-sheet-helm/src/index.ts",
+        "hash": "15073746821977215135"
+      },
+      {
+        "file": "libs/ui/ui-sheet-helm/src/lib/hlm-sheet-close.directive.ts",
+        "hash": "5386948143128392007"
+      },
+      {
+        "file": "libs/ui/ui-sheet-helm/src/lib/hlm-sheet-content.component.ts",
+        "hash": "17015396213376653856"
+      },
+      {
+        "file": "libs/ui/ui-sheet-helm/src/lib/hlm-sheet-description.directive.ts",
+        "hash": "3518001252346047383"
+      },
+      {
+        "file": "libs/ui/ui-sheet-helm/src/lib/hlm-sheet-footer.component.ts",
+        "hash": "18322213701470799848"
+      },
+      {
+        "file": "libs/ui/ui-sheet-helm/src/lib/hlm-sheet-header.component.ts",
+        "hash": "8726301481020380493"
+      },
+      {
+        "file": "libs/ui/ui-sheet-helm/src/lib/hlm-sheet-overlay.directive.ts",
+        "hash": "3865601894704950696"
+      },
+      {
+        "file": "libs/ui/ui-sheet-helm/src/lib/hlm-sheet-title.directive.ts",
+        "hash": "14289294924372389306"
+      },
+      {
+        "file": "libs/ui/ui-sheet-helm/src/lib/hlm-sheet.component.ts",
+        "hash": "15404241328973548718"
+      },
+      {
         "file": "package-lock.json",
-        "hash": "17428534754797629876"
+        "hash": "17489044892518159939"
       },
       {
         "file": "package.json",
@@ -107,7 +235,99 @@
       },
       {
         "file": "src/app/app.ts",
-        "hash": "8971417086560969301"
+        "hash": "250951935813115941"
+      },
+      {
+        "file": "src/app/component/button/button.html",
+        "hash": "2366891755512476921"
+      },
+      {
+        "file": "src/app/component/button/button.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/component/button/button.spec.ts",
+        "hash": "17493357491758865570"
+      },
+      {
+        "file": "src/app/component/button/button.ts",
+        "hash": "7462740981627910906"
+      },
+      {
+        "file": "src/app/component/input-text/input-text.html",
+        "hash": "10633451218957223979"
+      },
+      {
+        "file": "src/app/component/input-text/input-text.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/component/input-text/input-text.spec.ts",
+        "hash": "14220061228707132019"
+      },
+      {
+        "file": "src/app/component/input-text/input-text.ts",
+        "hash": "15194575979032335377"
+      },
+      {
+        "file": "src/app/component/select-sample/select-sample.html",
+        "hash": "13569175186769439858"
+      },
+      {
+        "file": "src/app/component/select-sample/select-sample.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/component/select-sample/select-sample.spec.ts",
+        "hash": "953484869811546056"
+      },
+      {
+        "file": "src/app/component/select-sample/select-sample.ts",
+        "hash": "3967673984165609409"
+      },
+      {
+        "file": "src/app/components/cardroom/cardroom.html",
+        "hash": "2240277449804496648"
+      },
+      {
+        "file": "src/app/components/cardroom/cardroom.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/components/cardroom/cardroom.spec.ts",
+        "hash": "14322203412174654869"
+      },
+      {
+        "file": "src/app/components/cardroom/cardroom.ts",
+        "hash": "13851594783901558038"
+      },
+      {
+        "file": "src/app/components/room-create/room-create.html",
+        "hash": "3013337081344370973"
+      },
+      {
+        "file": "src/app/components/room-create/room-create.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/components/room-create/room-create.spec.ts",
+        "hash": "960393022938529839"
+      },
+      {
+        "file": "src/app/components/room-create/room-create.ts",
+        "hash": "13405123732662898626"
+      },
+      {
+        "file": "src/app/mock/rooms-mock-data.ts",
+        "hash": "469374694100720868"
+      },
+      {
+        "file": "src/app/models/room.spec.ts",
+        "hash": "7190970576003926126"
+      },
+      {
+        "file": "src/app/models/room.ts",
+        "hash": "17721153536918034455"
       },
       {
         "file": "src/app/pages/dashboard/dashboard.html",
@@ -175,7 +395,7 @@
       },
       {
         "file": "src/app/pages/rooms/rooms.html",
-        "hash": "5537765370722957316"
+        "hash": "184113016197467582"
       },
       {
         "file": "src/app/pages/rooms/rooms.scss",
@@ -187,7 +407,7 @@
       },
       {
         "file": "src/app/pages/rooms/rooms.ts",
-        "hash": "10976404888073824412"
+        "hash": "17290511259151584145"
       },
       {
         "file": "src/index.html",
@@ -207,7 +427,7 @@
       },
       {
         "file": "tsconfig.json",
-        "hash": "12657441076730038669"
+        "hash": "17478367010078574103"
       },
       {
         "file": "tsconfig.spec.json",

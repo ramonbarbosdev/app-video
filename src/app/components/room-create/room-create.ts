@@ -2,9 +2,6 @@ import { Component, EventEmitter, Output } from '@angular/core';
 import { provideIcons } from '@ng-icons/core';
 import { lucideCross } from '@ng-icons/lucide';
 import { HlmButtonDirective } from '@spartan-ng/helm/button';
-import { HlmIconDirective } from '@spartan-ng/helm/icon';
-// import { HlmInputDirective } from '@spartan-ng/helm/input';
-// import { HlmLabelDirective } from '@spartan-ng/helm/label';
 import {
   BrnSheetContentDirective,
   BrnSheetTriggerDirective,
@@ -17,13 +14,12 @@ import {
   HlmSheetHeaderComponent,
   HlmSheetTitleDirective,
 } from '@spartan-ng/helm/sheet';
-import { BrnSelectImports } from '@spartan-ng/brain/select';
-import { HlmSelectImports } from '@spartan-ng/helm/select';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Room } from '../../models/room';
 import { Button } from "../../component/button/button";
 import { InputText } from "../../component/input-text/input-text";
 import { SelectSample } from "../../component/select-sample/select-sample";
+import { toast } from 'ngx-sonner';
+import { Toast } from '../../component/toast/toast';
 
 @Component({
   selector: 'app-room-create',
@@ -41,6 +37,7 @@ import { SelectSample } from "../../component/select-sample/select-sample";
     Button,
     InputText,
     SelectSample,
+    Toast
   ],
   providers: [provideIcons({ lucideCross })],
   templateUrl: './room-create.html',
@@ -56,7 +53,17 @@ export class RoomCreate {
     label: `Capacidade ${value}`,
   }));
 
+  showToast() {
+    toast('Salvo com sucesso', {
+      description: 'A nova sala foi criada, aproveite!',
+      action: {
+        label: 'Ok',
+        onClick: () => {},
+      },
+    });
+  }
   onSave() {
+    this.showToast();
     console.log(this.objeto);
   }
 }
