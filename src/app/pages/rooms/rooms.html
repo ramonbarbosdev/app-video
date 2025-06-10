@@ -11,11 +11,10 @@
 
     <div class="flex w-full h-full flex-wrap gap-4   ">
         <app-cardroom
-          *ngFor="let room of objeto"
+          *ngFor="let room of objetos"
           [id_room]="room.id_room"
           [nm_room]="room.nm_room"
           [ds_room]="room.ds_room"
-          [imageUrl]="room.imageUrl"
         >
         </app-cardroom>
 

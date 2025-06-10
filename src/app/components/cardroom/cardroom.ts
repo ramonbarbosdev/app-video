@@ -29,5 +29,5 @@ export class Cardroom {
   @Input() id_room!: number;
   @Input() nm_room!: string;
   @Input() ds_room!: string;
-  @Input() imageUrl!: string;
+  // @Input() imageUrl!: string;
 }

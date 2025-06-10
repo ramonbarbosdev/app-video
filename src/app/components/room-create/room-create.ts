@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, inject, Output } from '@angular/core';
 import { provideIcons } from '@ng-icons/core';
 import { lucideCross } from '@ng-icons/lucide';
 import { HlmButtonDirective } from '@spartan-ng/helm/button';
@@ -20,6 +20,7 @@ import { InputText } from "../../component/input-text/input-text";
 import { SelectSample } from "../../component/select-sample/select-sample";
 import { toast } from 'ngx-sonner';
 import { Toast } from '../../component/toast/toast';
+import { Baseservice } from '../../services/baseservice';
 
 @Component({
   selector: 'app-room-create',
@@ -37,7 +38,7 @@ import { Toast } from '../../component/toast/toast';
     Button,
     InputText,
     SelectSample,
-    Toast
+    Toast,
   ],
   providers: [provideIcons({ lucideCross })],
   templateUrl: './room-create.html',
@@ -46,7 +47,8 @@ import { Toast } from '../../component/toast/toast';
 export class RoomCreate {
   public objeto: Room = new Room();
   nm_titulo = 'Cadastrar Conta';
-  endpoint = '';
+  endpoint = 'rooms';
+  baseService = inject(Baseservice);
 
   public options = ['01', '02', '03', '04', '05'].map((value) => ({
     value,
@@ -62,8 +64,13 @@ export class RoomCreate {
       },
     });
   }
+
   onSave() {
-    this.showToast();
-    console.log(this.objeto);
+    this.baseService.cadastrar(this.endpoint, this.objeto).subscribe({
+      next: (res: any) => {
+        // this.onClose();
+      },
+      error: (err) => {},
+    });
   }
 }

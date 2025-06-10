@@ -16,18 +16,18 @@ import { Baseservice } from '../../services/baseservice';
   styleUrl: './rooms.scss',
 })
 export class Rooms implements OnInit {
-
-  objeto: Room[] = [];
-
+  objetos: Room[] = [];
+  endpoint = 'rooms';
   baseService = inject(Baseservice);
 
-  constructor() {
-    console.log('chegou');
-  }
+  constructor() {}
 
   ngOnInit(): void {
-    console.log('chegou')
-    this.objeto = this.baseService.obterTodos('rooms');
-    console.log('Dados mockados carregados:', this.objeto);
+    this.baseService.obterTodos(this.endpoint).subscribe((res) => {
+      console.log(res);
+
+      this.objetos = res;
+    });
   }
+
 }
