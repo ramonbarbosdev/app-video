@@ -19,6 +19,9 @@
     ],
     "@spartan-ng/helm/input": [
       ".\\libs/ui/ui-input-helm/src/index.ts"
+    ],
+    "@spartan-ng/helm/sonner": [
+      ".\\libs/ui/ui-sonner-helm/src/index.ts"
     ]
   },
   "nxJsonPlugins": [],
@@ -202,12 +205,20 @@
         "hash": "15404241328973548718"
       },
       {
+        "file": "libs/ui/ui-sonner-helm/src/index.ts",
+        "hash": "3266071164489127345"
+      },
+      {
+        "file": "libs/ui/ui-sonner-helm/src/lib/hlm-toaster.component.ts",
+        "hash": "17267968514933975336"
+      },
+      {
         "file": "package-lock.json",
-        "hash": "17489044892518159939"
+        "hash": "18782600094751124"
       },
       {
         "file": "package.json",
-        "hash": "9466841805851192368"
+        "hash": "11753024874260449546"
       },
       {
         "file": "public/favicon.ico",
@@ -286,6 +297,22 @@
         "hash": "3967673984165609409"
       },
       {
+        "file": "src/app/component/toast/toast.html",
+        "hash": "281015333077164805"
+      },
+      {
+        "file": "src/app/component/toast/toast.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/component/toast/toast.spec.ts",
+        "hash": "14909057616200629804"
+      },
+      {
+        "file": "src/app/component/toast/toast.ts",
+        "hash": "7522988799815634959"
+      },
+      {
         "file": "src/app/components/cardroom/cardroom.html",
         "hash": "2240277449804496648"
       },
@@ -303,7 +330,7 @@
       },
       {
         "file": "src/app/components/room-create/room-create.html",
-        "hash": "3013337081344370973"
+        "hash": "3244838702962689628"
       },
       {
         "file": "src/app/components/room-create/room-create.scss",
@@ -315,7 +342,11 @@
       },
       {
         "file": "src/app/components/room-create/room-create.ts",
-        "hash": "13405123732662898626"
+        "hash": "11298851753441706451"
+      },
+      {
+        "file": "src/app/environment/environment.ts",
+        "hash": "13868730493325658598"
       },
       {
         "file": "src/app/mock/rooms-mock-data.ts",
@@ -410,6 +441,14 @@
         "hash": "17290511259151584145"
       },
       {
+        "file": "src/app/services/baseservice.spec.ts",
+        "hash": "9659944937903099"
+      },
+      {
+        "file": "src/app/services/baseservice.ts",
+        "hash": "10254532187939932444"
+      },
+      {
         "file": "src/index.html",
         "hash": "4698499770282223049"
       },
@@ -427,7 +466,7 @@
       },
       {
         "file": "tsconfig.json",
-        "hash": "17478367010078574103"
+        "hash": "11143904439597773550"
       },
       {
         "file": "tsconfig.spec.json",

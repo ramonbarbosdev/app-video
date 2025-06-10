@@ -4,14 +4,14 @@
 
     <div class="flex w-full  p-2">
        <app-room-create></app-room-create>
-       
+
     </div>
 
 
 
     <div class="flex w-full h-full flex-wrap gap-4   ">
         <app-cardroom
-          *ngFor="let room of rooms"
+          *ngFor="let room of objeto"
           [id_room]="room.id_room"
           [nm_room]="room.nm_room"
           [ds_room]="room.ds_room"
